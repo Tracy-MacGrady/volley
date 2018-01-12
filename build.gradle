@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.Tracy-MacGrady'//替换成你的Github的用户名
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
